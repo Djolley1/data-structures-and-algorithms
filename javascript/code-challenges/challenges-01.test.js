@@ -42,7 +42,11 @@ Use `forEach` to loop over the input array. The modified strings should each be 
 ------------------------------------------------------------------------------------------------ */
 
 const allUpperCase = (arr) => {
-  // Solution code here...
+  let upperCaseArray = [];
+  arr.forEach ((str) => {
+    upperCaseArray.push(str.toUpperCase());
+  });
+  return upperCaseArray;
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -150,7 +154,7 @@ describe('Testing challenge 2', () => {
   });
 });
 
-xdescribe('Testing challenge 3', () => {
+describe('Testing challenge 3', () => {
   test('It should return an array of uppercase strings', () => {
     expect(allUpperCase(['hi', 'how', 'are', 'you'])).toStrictEqual(['HI', 'HOW', 'ARE', 'YOU']);
   });
