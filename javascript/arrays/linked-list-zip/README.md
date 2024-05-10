@@ -14,5 +14,4 @@ You have access to the Node class and all the properties on the Linked List clas
 
 The approach taken was to merge two linked lists by iterating through both lists simultaneously and appending their values alternately into a new linked list.
 
-## Solution
-<!-- Show how to run your code, and examples of it in action -->
+
